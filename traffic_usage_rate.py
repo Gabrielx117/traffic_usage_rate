@@ -25,9 +25,9 @@ else:
 	print('set correct check range\nweek or month')
 	sys.exit(0)
 
-with open('./info.json', 'r') as f:
+with open('%s/info.json' %sys.path[0], 'r') as f:
 	ck = json.load(f)
-with open('./head.html', 'r') as f:
+with open('%s/head.html' %sys.path[0], 'r') as f:
 	html_head = f.read()
 
 
